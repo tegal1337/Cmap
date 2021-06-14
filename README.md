@@ -1,7 +1,8 @@
 # cmap
-Generator Free Maple activation code for 15 days.
+Free Maple activation code generator for 15 days.
+
 ### Cara menggunakan
-`python maple.py` <br /><br />
+`python maple.py` <br/><br/>
 Jalankan ulang perintah diatas ketika sudah 15 hari.
 
 
