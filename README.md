@@ -1,7 +1,11 @@
 # cmap
 Free Maple activation code generator for 15 days.
 
+
 ### Cara menggunakan
+Download [chromedriver](https://chromedriver.chromium.org/downloads)<br>
+Edit `pondev = webdriver.Chrome("D:/BOT/chromedriver_win32/chromedriver")` sesuai path ke chromedriver yang sudah didownload <br>
+
 `python maple.py` <br/><br/>
 Jalankan ulang perintah diatas ketika sudah 15 hari.
 
