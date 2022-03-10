@@ -14,7 +14,7 @@ import string
 #python maple.py
 
 def makeCode():
-    pondev = webdriver.Chrome("D:/bot/chromedriver_win32/chromedriver")
+    pondev = webdriver.Chrome("C:/Users/PC/Downloads/chromedriver_win32/chromedriver")
     # set path ke dir spesifik file chromedriver anda 
     letters = string.ascii_lowercase
     mailRand = ''.join(random.choice(letters) for i in range(6))+'@mailsac.com'
@@ -50,12 +50,17 @@ def makeCode():
     lastopen = pondev.find_element_by_xpath("/html/body/div[1]/div[3]/div[1]/div/div[2]/div/table/tbody/tr[2]/td[2]/div[2]/p[3]/a").get_attribute("innerHTML").splitlines()[0]
     pondev.get(lastopen)
     pondev.get(lastopen)
-    sleep(3)
+    pondev.implicitly_wait(3)
+
+    Firstinstall = pondev.find_element_by_xpath("/html/body/div[4]/div/div[2]/p[3]/span/a").text
     exp = pondev.find_element_by_xpath("//*[@id='evaluationExpiry']").text
     Acode = pondev.find_element_by_xpath("//span[@id='evaluationPurchaseCode']").text
     print('\n')
+    print('Download and Install Maple : '+str(Firstinstall))
     print('Activation code : '+Acode)
     print('Your evaluation will expire in '+str(exp))
+    print('\n')
+    print('If you are new to using this tool and have not installed Maple, you can use the direct download link above.')
     print('\n')
 
 
